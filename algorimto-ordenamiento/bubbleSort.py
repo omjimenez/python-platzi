@@ -5,11 +5,7 @@ def bubbleSort(array):
     n = len(array)
 
     for i in range(n):
-        print(f' --- Array ciclo {i} ')
-        for j in range(0, n-i):
-            #print(f'array {j} -- {n-i-1}')
-            #print(array[j])
-            #print(f'array[{j}] > array[{j+1}] {array[j]}  {array[j+1]}')
+        for j in range(0, n-i-1):
             if array[j] > array[j+1]:
                 array[j], array[j+1] = array[j+1], array[j]
     return array
